@@ -26,7 +26,7 @@ Also, make sure you fork this repository and clone your fork locally.
 * You should be able to access the service from http://socking.devops.atypon.com. (HTTP not HTTPs)
 
 #### Screenshot
-![Sock Shop frontend](https://github.com/microservices-demo/microservices-demo.github.io/raw/master/assets/sockshop-frontend.png)
+![Sock Shop frontend](https://github.com/christidis/microservices-demo.github.io/raw/master/assets/sockshop-frontend.png)
 
 ## TASK 3: Troubleshooting
 
