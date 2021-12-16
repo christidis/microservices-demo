@@ -11,7 +11,7 @@ Also, make sure you fork this repository and clone your fork locally.
 * Install an ingress controller to the cluster using the given loadbalancer IP: `34.136.78.189`.
 * Install it under the `kube-ingress` namespace.
 
-### Notes
+#### Notes
 
 * There is a Reserved Public IP in Google Cloud for this task: `34.136.78.189` and a DNS name configured for `socking.devops.atypon.com`.
 * Suggested approach is to install nginx-ingress using the official [Helm Chart](https://docs.nginx.com/nginx-ingress-controller/installation/installation-with-helm/).
@@ -25,7 +25,7 @@ Also, make sure you fork this repository and clone your fork locally.
 * You should be able to access the service from http://socking.devops.atypon.com. The DNS is already prepared for you.
 * If you have issues, accessing the service, then please make sure that IPv6 is disabled on your system. Alternatively, add a static entry in your `/etc/hosts` file for `34.136.78.189 socking.devops.atypon.com`.
 
-### Screenshot
+#### Screenshot
 ![Sock Shop frontend](https://github.com/microservices-demo/microservices-demo.github.io/raw/master/assets/sockshop-frontend.png)
 
 ## TASK 3: Troubleshooting
@@ -39,7 +39,9 @@ user-8547d89b-c2d2k             0/1     Running   15         80m
 
 * Please make sure to identify the issues, and try to fix them by redeploying your changes.
 
-Notes: `kubectl` subcommands `logs` & `describe` may come handy for this task. In addition, reviewing the template files for these `Deployments` will help you to identify the error.
+#### Notes
+
+`kubectl` subcommands `logs` & `describe` may come handy for this task. In addition, reviewing the template files for these `Deployments` will help you to identify the error.
 
 ## TASK 4: Horizontal Pod Autoscaler (Optional task)
 
