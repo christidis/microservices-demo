@@ -48,7 +48,7 @@ user-8547d89b-c2d2k             0/1     Running   15         80m
 
 ## TASK 5: Pull Request
 
-Please make sure you commit your changes to your forked repository and open a Pull Request to my repository.
+Please make sure you commit your changes to your forked repository and open a Pull Request to this repository.
 
 
 ## Cleanup
