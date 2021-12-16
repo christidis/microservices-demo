@@ -58,13 +58,13 @@ Please make sure you commit your changes to your forked repository and open a Pu
 
 If, for any reason, you need to cleanup your work (eg in case of a mistake)
 ```
-# delete the ingress
-$ helm -n kube-ingress list
-$ helm -n kube-ingress delete <your_helm_release_name>
-$ kubectl delete ns kube-ingress
-
 # delete the microservice
 $ helm -n microservices-demo list
 $ helm -n microservices-demo delete <your_helm_release_name>
 $ kubectl delete ns microservices-demo
+
+# delete the ingress
+$ helm -n kube-ingress list
+$ helm -n kube-ingress delete <your_helm_release_name>
+$ kubectl delete ns kube-ingress
 ```
