@@ -41,7 +41,7 @@ user-8547d89b-c2d2k             0/1     Running   15         80m
 
 #### Notes
 
-`kubectl` subcommands `logs` & `describe` may come handy for this task. In addition, reviewing the template files for these `Deployments` will help you to identify the error.
+`kubectl` subcommands `logs`, `describe` & `events -w` may come handy for this task. In addition, reviewing the template files for these `Deployments` will help you to identify the error.
 
 ## TASK 4: Horizontal Pod Autoscaler (Optional task)
 
