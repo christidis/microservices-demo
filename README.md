@@ -23,7 +23,7 @@ Also, make sure you fork this repository and clone your fork locally.
 **Please do NOT modify the given `resources:`. They are well defined and they are not related with any errors.**
 
 * The [helm-charts folder](./deploy/kubernetes/helm-chart/) contains a single Helm chart for deploying all the involved services. Please, install the given chart under the `microservices-demo` namespace.
-* You should be able to access the service from http://socking.devops.atypon.com.
+* You should be able to access the service from http://socking.devops.atypon.com. (HTTP not HTTPs)
 * As mentioned above, the DNS is already prepared for you. If you have issues resolving the site then please add a static entry in your `/etc/hosts` file for `34.136.78.189 socking.devops.atypon.com`.
 
 #### Screenshot
