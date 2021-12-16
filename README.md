@@ -13,7 +13,7 @@ Also, make sure you fork this repository and clone your fork locally.
 
 ### Notes
 
-There is a Reserved Public IP in Google Cloud for this task: `34.136.78.189` and a DNS name configured for `socking.devops.atypon.com`.
+There is a Reserved Public IP in Google Cloud for this task: `34.136.78.189` and a DNS name configured for `socking.devops.atypon.com`.  
 Suggested approach is to install nginx-ingress using the official [Helm Chart](https://docs.nginx.com/nginx-ingress-controller/installation/installation-with-helm/). If using nginx-ingress, the property to set the LoadBalancerIP is `--set controller.service.loadbalancerIP=34.136.78.189`.
 
 ## TASK 2: Install the microservices-demo application
