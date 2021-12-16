@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - command:
-        - /usr/local/bin/java.sh
+        - /usr/local/bin/java.sxxxh
         - -jar
         - ./app.jar
         - --port={{ .Values.carts.containerPort }}

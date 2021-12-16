@@ -37,7 +37,7 @@ spec:
           value: user-db:27017
         {{- if .Values.zipkin.enabled }}
         - name: ZIPKIN
-          value: http://{{ .Values.zipkin.url }}:9411/api/v1/spans
+          value: http://{{ .Values.zipkin.url }}:9412/api/v1/spans
         {{- end }}
         securityContext:
           runAsNonRoot: true
