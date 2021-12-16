@@ -29,6 +29,9 @@ Suggested approach is to install nginx-ingress using the official [Helm Chart](h
 * You should be able to access the service from http://socking.devops.atypon.com. The DNS is already prepared for you.
 * If you have issues, accessing the service, then please make sure IPv6 is disabled on your system for the assignment. Alternatively, add a static entry in your `/etc/hosts` file for `34.136.78.189 socking.devops.atypon.com`.
 
+### Screenshot
+![Sock Shop frontend](https://github.com/microservices-demo/microservices-demo.github.io/raw/master/assets/sockshop-frontend.png)
+
 ## Troubleshooting
 
 * When you are done with your installation you may notice that 2 services (`carts` & `user`) are not marked as `Ready` and Kubernetes is restarting the services. This has an impact to the site as it is not working properly.
