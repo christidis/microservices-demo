@@ -42,20 +42,20 @@ user-8547d89b-c2d2k             0/1     Running   15         80m
 
 #### Notes
 
-`kubectl` subcommands `logs`, `describe` & `events -w` may come handy for this task. In addition, reviewing the template files for these `Deployments` will help you to identify the error.
+`kubectl` subcommands `logs`, `describe` & `events -w` may come handy for this task.  
+In addition, reviewing the template files for these `Deployments` objects in Kubernetes may help you to identify the issues.
 
 ## TASK 4: Horizontal Pod Autoscaler (Optional task)
 
-* Under [autoscaling folder](./deploy/kubernetes/autoscaling/) there are sample configurations for enabling Horizontal Pod Autoscaler. You may pick up any configuration you want, for any service you like and integrate it to the chart or deploy it to the cluster (using kubectl apply). This is an optional task.
+* Under [autoscaling folder](./deploy/kubernetes/autoscaling/) there are sample configurations for enabling Horizontal Pod Autoscaler. You may pick up any configuration, for any service and integrate it to the chart or deploy it to the K8s cluster (using `kubectl apply -f`). This is an optional task.
 
 ## TASK 5: Pull Request
 
-Please make sure you commit your changes to your forked repository and open a Pull Request to this repository.
-
+Once you have identified the issues, please make sure you commit your changes to your forked repository and open a Pull Request to this repository.
 
 ## Cleanup
 
-**When done please do *not* remove the applications in order to be able to review your work.**
+**When done please do *not* remove the services in order to be able to review your progress.**
 
 If, for any reason, you need to cleanup your work (eg in case of a mistake)
 ```
