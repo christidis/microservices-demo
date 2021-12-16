@@ -14,7 +14,7 @@ ingress:
     annotations:
         kubernetes.io/ingress.class: nginx
     labels: {}
-    host: ''
+    host: 'socking.devops.atypon.com'
     tlsSecretName: ''
 
 cartsdb:
