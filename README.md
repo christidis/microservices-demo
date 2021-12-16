@@ -6,7 +6,7 @@ Please make sure you have `kubectl` and `helm` installed to your system.
 Also, make sure you fork this repository and clone your fork locally.
 
 
-## TASK 1: Install an Ingress Controller to the cluster
+## TASK 1: Install an Ingress Controller to the K8s cluster
 
 * Install an ingress controller to the cluster using the given loadbalancer IP: `34.136.78.189`.
 * Install it under the `kube-ingress` namespace.
