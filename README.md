@@ -45,7 +45,7 @@ user-8547d89b-c2d2k             0/1     Running   15         80m
 
 ## TASK 4: Horizontal Pod Autoscaler (Optional task)
 
-* Under autoscaling configuration there are sample configurations for enabling Horizontal Pod Autoscaler. You may pick up any configuration you want, for any service you like and integrate it to the chart or deploy it to the cluster (using kubectl apply). This is an optional task.
+* Under [autoscaling folder](./deploy/kubernetes/autoscaling/) there are sample configurations for enabling Horizontal Pod Autoscaler. You may pick up any configuration you want, for any service you like and integrate it to the chart or deploy it to the cluster (using kubectl apply). This is an optional task.
 
 ## TASK 5: Pull Request
 
