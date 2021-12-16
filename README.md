@@ -55,7 +55,7 @@ Please make sure you commit your changes to your forked repository and open a Pu
 
 ## Cleanup
 
-When done please do *not* remove your work in order to be able to review your work.
+**When done please do *not* remove your work in order to be able to review your work.**
 
 If, for any reason, you need to cleanup your work (eg you made a mistake)
 ```
