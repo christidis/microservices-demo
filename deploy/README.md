@@ -7,11 +7,10 @@ Sub directories contain scripts and configuration for deployment in target platf
 ## Requirements
 
 Please make sure you have `kubectl` and `helm` installed to your system.
-
 Also, make sure you fork this repository and clone your fork locally.
 
 
-## Install an Ingress Controller to the cluster
+## TASK 1: Install an Ingress Controller to the cluster
 
 * Install an ingress controller to the cluster using the given loadbalancer IP: `34.136.78.189`.
 * Install it under the `kube-ingress` namespace.
@@ -21,7 +20,7 @@ Also, make sure you fork this repository and clone your fork locally.
 There is a Reserved Public IP in Google Cloud for this task: `34.136.78.189` and a DNS name configured for `socking.devops.atypon.com`.
 Suggested approach is to install nginx-ingress using the official [Helm Chart](https://docs.nginx.com/nginx-ingress-controller/installation/installation-with-helm/). If using nginx-ingress, the property to set the LoadBalancerIP is `--set controller.service.loadbalancerIP=34.136.78.189`.
 
-## Install the microservices-demo application
+## TASK 2: Install the microservices-demo application
 
 **Please do NOT modify the given `resources:`. They are well defined and they are not related with any errors.**
 
@@ -32,7 +31,7 @@ Suggested approach is to install nginx-ingress using the official [Helm Chart](h
 ### Screenshot
 ![Sock Shop frontend](https://github.com/microservices-demo/microservices-demo.github.io/raw/master/assets/sockshop-frontend.png)
 
-## Troubleshooting
+## TASK 3: Troubleshooting
 
 * When you are done with your installation you may notice that 2 services (`carts` & `user`) are not marked as `Ready` and Kubernetes is restarting the services. This has an impact to the site as it is not working properly.
 ```
@@ -43,11 +42,11 @@ user-8547d89b-c2d2k             0/1     Running   15         80m
 
 * Please make sure to identify the issues, and try to fix them. `kubectl` `logs` & `describe` may come handy. Also, reviewing the template files for these `Deployments` will help you to identify the error.
 
-## Optional task
+## TASK 4: Horizontal Pod Autoscaler (Optional task)
 
 * Under autoscaling configuration there are sample configurations for enabling Horizontal Pod Autoscaler. You may pick up any configuration you want, for any service you like and integrate it to the chart or deploy it to the cluster (using kubectl apply). This is an optional task.
 
-## Pull Request
+## TASK 5: Pull Request
 
 Please make sure you commit your changes to your forked repository and open a Pull Request to my repository.
 
