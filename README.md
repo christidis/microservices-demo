@@ -2,7 +2,7 @@
 
 ## Requirements
 
-Please make sure you have `kubectl` and `helm` installed to your system.  
+Please make sure you have `kubectl` and `helm` installed on your system.  
 Also, make sure you fork this repository and clone your fork locally.
 
 
