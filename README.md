@@ -5,6 +5,21 @@
 Please make sure you have `kubectl` and `helm` installed on your system.  
 Also, make sure you fork this repository and clone your fork locally.
 
+In order to be able to connect to the Kubernetes cluster extract the contents of the `kube-assignment.tgz` (sent via e-mail) under your home directory.
+```
+$ cd ~
+$ tar zxvf kube-assignment.tgz
+$ ls -l ~/kube-assignment/
+$ export KUBECONFIG=~/kube-assignment/kubeconfig.yaml
+$ export GOOGLE_APPLICATION_CREDENTIALS=~/kube-assignment/service-account-key.json
+```
+
+and verify connectivity to the cluster. For example:
+```
+$ kubectl get ns
+$ kubectl version
+```
+
 
 ## TASK 1: Install an Ingress Controller to the K8s cluster
 
