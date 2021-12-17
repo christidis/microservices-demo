@@ -8,15 +8,15 @@ Also, make sure you fork this repository and clone your fork locally.
 
 ## TASK 1: Install an Ingress Controller to the K8s cluster
 
-* Install an ingress controller to the cluster using the given loadbalancer IP: `34.136.78.189`.
+* Install Traefik ingress controller to the cluster using the provided loadbalancer IP: `34.136.78.189`.
 * Install it under the `kube-ingress` namespace.
 
 #### Notes
 
 * There is a Reserved Public IP in Google Cloud for this task: `34.136.78.189` 
 * There is also a DNS `A` record for `socking.devops.atypon.com` already configured.
-* Suggested approach is to install nginx-ingress using the official [Helm Chart](https://docs.nginx.com/nginx-ingress-controller/installation/installation-with-helm/).
-* If using nginx-ingress Helm chart, the property to set the LoadBalancerIP is `--set controller.service.loadbalancerIP=34.136.78.189`.
+* Suggested approach is to install traefik-ingress using the official [Traefik Chart](https://github.com/traefik/traefik-helm-chart/tree/master/traefik).
+* If using traefik-ingress Helm chart, the property to set the LoadBalancerIP is `--set service.spec.loadBalancerIP=34.136.78.189`.
 
 ## TASK 2: Install the microservices-demo application
 
