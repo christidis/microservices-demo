@@ -32,6 +32,7 @@ $ kubectl version
 * There is also a DNS `A` record for `socking.devops.atypon.com` already configured.
 * Suggested approach is to install traefik-ingress using the official [Traefik Chart](https://github.com/traefik/traefik-helm-chart/tree/master/traefik).
 * If using traefik-ingress Helm chart, the property to set the LoadBalancerIP is `--set service.spec.loadBalancerIP=34.136.78.189`.
+* There are no active Kubernetes worker nodes deployed in the cluster. They will be deployed once you install your first workload.
 
 ## TASK 2: Install the microservices-demo application
 
