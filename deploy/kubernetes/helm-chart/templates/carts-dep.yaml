@@ -54,13 +54,13 @@ spec:
           name: tmp-volume
         livenessProbe:
           httpGet:
-            path: /healthZZZZZZZ
+            path: /health
             port: {{ .Values.carts.containerPort }}
           initialDelaySeconds: 420
           periodSeconds: 3
         readinessProbe:
           httpGet:
-            path: /healthZZZZZZ
+            path: /health
             port: {{ .Values.carts.containerPort }}
           initialDelaySeconds: 360
           periodSeconds: 3
