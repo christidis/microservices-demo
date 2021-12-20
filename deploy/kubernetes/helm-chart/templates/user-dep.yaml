@@ -27,14 +27,14 @@ spec:
         args:
         - -port={{ .Values.user.containerPort }}
         - -database=mongodb
-        - -mongo-host=user-db.{{ .Release.Namespace }}.svc.cluster.local:27016
+        - -mongo-host=$(MONGO_HOST)
         resources:
 {{ toYaml .Values.user.resources | indent 10 }}
         ports:
         - containerPort: {{ .Values.user.containerPort }}
         env:
         - name: MONGO_HOST
-          value: user-db:27017
+          value: user-db.{{ .Release.Namespace }}.svc.cluster.local:27017
         {{- if .Values.zipkin.enabled }}
         - name: ZIPKIN
           value: http://{{ .Values.zipkin.url }}:9411/api/v1/spans
